@@ -11,7 +11,7 @@ for item in list_values:
     t.append([item[0]])
 k=np.sum(t)/len(t)                       #求均值
 for i in range(len(t)):                  #求方差
-    s=s+(t[i]-k)**2/len(t)
+    s=s+(t[i]-k)**2/(len(t)-1)
 s=float(s[0])
 n=5                                      #划分的区间的个数
 star=8                                   #所划分的第一个区间的下界
